@@ -17,17 +17,17 @@ const Projects = () =>{
         projects && projects.map((project)=> {
         return(      
               <Item key={project.toString()}>
-                <Item.Image size='medium' centered circular src={project["url"] }/>
+                <Item.Image size='medium' centered src={project["url"] }/>
                 <Item.Content>
                     <Item.Header as='a'> {project["title"]} </Item.Header>
                     <Item.Description>
                         {project["description"]}
                     </Item.Description>
                     <Item.Extra>
-                        <Button primary floated='right'>
-                            Learn More <Icon big  name='github' />
+                        <Button primary floated='right' as='a' target="_blank" href={project.source}>
+                            <Icon size='large'  name='github' />
                         </Button>
-                         <Label>Limited</Label>
+                         <Label> React </Label>
                     </Item.Extra>
                 </Item.Content>
               </Item>
@@ -36,9 +36,11 @@ const Projects = () =>{
 
     return (
         <Layout>
-            <Container >
-            <Header as='h1'>Feature Projects</Header>
-            <Item.Group >
+            <Container  >
+            <Header as='h1' style={{ margin: '100px 100px'}} className="bg-gold">
+                Feature Projects
+            </Header>
+            <Item.Group  divided style={{ margin: '3em 3em'}}>
                 { listProjects }
             </Item.Group>
             </Container>

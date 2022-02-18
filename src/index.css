@@ -13,12 +13,12 @@ code {
     monospace;
 }
 
-/* .bg-gold {
+.bg-gold {
   
   background: -webkit-linear-gradient(110deg, #8b8b8b 60%, #000000 60%);
   background: -o-linear-gradient(110deg, #8b8b8b 60%, #000000 60%);
   background: -moz-linear-gradient(110deg, #8b8b8b 60%, #000000 60%);
-  background: linear-gradient(110deg, #8b8b8b 60%, #d1bebe 60%);
+  background: linear-gradient(110deg, #8b8b8b 60%, #030000 60%); 
  
-} */
+}
 

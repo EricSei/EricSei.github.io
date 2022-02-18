@@ -50,7 +50,9 @@ class Skills extends Component {
             <Layout>
                 {
                 <Container >
-                    <Header as='h1'> Skills </Header>
+                    <Header as='h1' style={{ margin: '100px 100px'}} className="bg-gold">
+                         Skills
+                    </Header>
                     <Item.Group >
                         { this.skillList  }
                     </Item.Group>

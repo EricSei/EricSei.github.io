@@ -7,7 +7,7 @@ const Home = () =>{
     return(
         <Layout >
             <div >
-                <header style={{position: 'absolute'} }>
+                <header >
                     Hi there, I'm Eric Sei
                 </header>
             </div>

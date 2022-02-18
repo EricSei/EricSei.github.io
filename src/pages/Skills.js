@@ -1,33 +1,62 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
+import { Container, Image, Item, Button, Icon, Label, Header } from 'semantic-ui-react'
+
+import getSkills from '../data/skills';
 
 class Skills extends Component {
-
-    constructor(){
+    
+    constructor(props){
         super();
         this.state = {
-            sum: 0
+            skills: `${getSkills()}`
         }
-
-        this.add = this.add.bind(this);
     }
-
+    
     componentDidMount(){
-        
+        // console.log(getSkills())
+        this.getData();
     }
 
-    add(sum){
-        this.setState(
-            state => ({
-                sum: this.state.sum + sum
-            })
-        )
-    }
+    getData(){
+        this.setState({
+            skills:  `${getSkills()}`
+        })
+      }
+
+    skillList =  getSkills().map((skill) =>{
+        return(      
+            <Item key={skill["id"]}>
+              <Item.Image size='medium' centered circular src={skill["url"] }/>
+              <Item.Content>
+                  <Item.Header as='a'> {skill["title"]} </Item.Header>
+                  <Item.Description>
+                      {skill["description"]}
+                  </Item.Description>
+                  <Item.Extra>
+                      <Button primary floated='right'>
+                          Learn More <Icon big  name='github' />
+                      </Button>
+                       <Label>Limited</Label>
+                  </Item.Extra>
+              </Item.Content>
+            </Item>
+          ) 
+    })
 
     render(){
         return(
+           
             <Layout>
-                Skills
+                {
+                <Container >
+                    <Header as='h1'> Skills </Header>
+                    <Item.Group >
+                        { this.skillList  }
+                    </Item.Group>
+                </Container> 
+                }
+                
             </Layout>
         )
     }

@@ -16,8 +16,9 @@ const NavBar = () => {
         textAlign='center'
         style={{ minHeight: 50, padding: '0em 0em' }}
         vertical
+        inverted
       >
-      <Menu style={{ minHeight: 50, padding: '1em 0em' }} stackable >
+      <Menu style={{ minHeight: 50, padding: '1em 0em' }} stackable inverted >
         <Menu.Item
           as={Link} 
           to={"/"}
@@ -25,7 +26,6 @@ const NavBar = () => {
           active={activeItem === "Eric Sei"}
           fixed="top" color="teal" sticky inverted> Eric Sei </Menu.Item>
         
-
         <Menu.Menu position='right'>
         <Menu.Item
               as={Link}

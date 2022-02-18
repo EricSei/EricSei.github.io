@@ -6,7 +6,7 @@ import getProjects from '../data/projects';
 
 const Projects = () =>{
   
-    const [projects , setProjects ] = useState([]);
+    const [projects , setProjects ] = useState(null);
 
     useEffect( () => {
        

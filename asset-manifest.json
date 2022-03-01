@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e3d7148.chunk.css",
+    "main.js": "/static/js/main.8bed59b5.chunk.js",
+    "main.js.map": "/static/js/main.8bed59b5.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.0dfc019d.js",
+    "runtime~main.js.map": "/static/js/runtime~main.0dfc019d.js.map",
+    "static/css/2.4edadf70.chunk.css": "/static/css/2.4edadf70.chunk.css",
+    "static/js/2.0dfeab46.chunk.js": "/static/js/2.0dfeab46.chunk.js",
+    "static/js/2.0dfeab46.chunk.js.map": "/static/js/2.0dfeab46.chunk.js.map",
+    "static/js/3.8a10cef1.chunk.js": "/static/js/3.8a10cef1.chunk.js",
+    "static/js/3.8a10cef1.chunk.js.map": "/static/js/3.8a10cef1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3356290782d5692b94aec41fa84f8879.js": "/precache-manifest.3356290782d5692b94aec41fa84f8879.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4edadf70.chunk.css.map": "/static/css/2.4edadf70.chunk.css.map",
+    "static/css/main.6e3d7148.chunk.css.map": "/static/css/main.6e3d7148.chunk.css.map",
+    "static/media/AHHPUSEI_RESUME_SWE.pdf": "/static/media/AHHPUSEI_RESUME_SWE.0bc41762.pdf",
+    "static/media/admin_zaw.png": "/static/media/admin_zaw.7cac7d7b.png",
+    "static/media/books.jpg": "/static/media/books.0b317341.jpg",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/centrum.jpg": "/static/media/centrum.312ac8a4.jpg",
+    "static/media/mobile.jpg": "/static/media/mobile.339efed9.jpg"
+  }
+}

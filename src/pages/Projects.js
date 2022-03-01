@@ -9,7 +9,6 @@ const Projects = () =>{
     const [projects , setProjects ] = useState(null);
 
     useEffect( () => {
-       
         setProjects(getProjects());
     },[])
 

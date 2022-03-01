@@ -24,32 +24,47 @@ const Home = ({mobile}) =>{
     return(
         <Layout>
             <Container text  className='bg-gold'>
-            <Header
-            as='h2'
-            content='Eric Sei'
-            
-            style={{
-                fontSize: mobile ? '2em' : '4em',
-                fontWeight: 'normal',
-                marginBottom: 0,
-                marginTop: mobile ? '1.5em' : '3em',
-            }}
-            />
+                <Header
+                as='h2'
+                content='Eric Sei'
+                
+                style={{
+                    fontSize: mobile ? '2em' : '4em',
+                    fontWeight: 'normal',
+                    marginBottom: 0,
+                    marginTop: mobile ? '1.5em' : '3em',
+                }}
+                />
 
-            <Header
-            as='h2'
-            content= "Software engineer"
-            
-            style={{
-                fontSize: mobile ? '1.5em' : '1.7em',
-                fontWeight: 'normal',
-                marginTop: mobile ? '0.5em' : '1.5em',
-            }}
-            />
-            <Button primary floated='right' as='a' target="_blank" href={resume}>
-                            <Icon size='large'  name='download' />
-                            RESUME
-            </Button>
+                <Header
+                as='h2'
+                content= "Software engineer"
+                
+                style={{
+                    fontSize: mobile ? '1.5em' : '1.7em',
+                    fontWeight: 'normal',
+                    marginTop: mobile ? '0.5em' : '1.5em',
+                }}
+                />
+                <Button primary floated='right' as='a' target="_blank" href={resume}>
+                                <Icon size='large'  name='download' />
+                                RESUME
+                </Button>
+        </Container>
+       
+        <Container text >
+              
+                <Header
+                as='h3'
+                content= "Software engineer with a passion to have an impact on businesses utilizing technologies that scale. I've gained hands-on experience in full-stack application development through internships, multiple projects, and a computer science degree."
+                
+                // style={{
+                //     fontSize: mobile ? '1.5em' : '1.7em',
+                //     fontWeight: 'normal',
+                //     marginTop: mobile ? '0.5em' : '1.5em',
+                // }}
+                />
+               
         </Container>
     </Layout>
       

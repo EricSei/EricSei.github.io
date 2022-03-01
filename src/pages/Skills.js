@@ -27,18 +27,18 @@ class Skills extends Component {
     skillList =  getSkills().map((skill) =>{
         return(      
             <Item key={skill["id"]}>
-              <Item.Image size='medium' centered circular src={skill["url"] }/>
+              <Item.Image size='medium' centered  src={skill["url"] }/>
               <Item.Content>
                   <Item.Header as='a'> {skill["title"]} </Item.Header>
                   <Item.Description>
                       {skill["description"]}
                   </Item.Description>
-                  <Item.Extra>
+                  {/* <Item.Extra>
                       <Button primary floated='right'>
                           Learn More <Icon big  name='github' />
                       </Button>
                        <Label>Limited</Label>
-                  </Item.Extra>
+                  </Item.Extra> */}
               </Item.Content>
             </Item>
           ) 
@@ -53,7 +53,7 @@ class Skills extends Component {
                     <Header as='h1' style={{ margin: '100px 100px'}} className="bg-gold">
                          Skills
                     </Header>
-                    <Item.Group >
+                    <Item.Group divided >
                         { this.skillList  }
                     </Item.Group>
                 </Container> 
